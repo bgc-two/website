@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Hello, world!</title>
+    <style>  <!-- "style" is HOW the webpage is displayed -->
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .name1 {
+        color: MediumVioletRed;
+      }
+      .name2 {
+        color: LightSeaGreen;
+      }
+    </style>
+    <script>
+      let greetings = [
+        "Hello, world!",    // english
+        "Hola, Mundo!",     // spanish
+        "Salamu, Dunia!",   // swahili
+        "Bonjour le monde!" // french
+      ]
+      let greetingsIdx = 0
+      function changeMessage(greetingElement) {
+        greetingsIdx = greetingsIdx + 1
+        greetingElement.innerText = greetings[greetingsIdx]
+      }
+    </script>
+  </head>
+  <body>  <!-- "body" is WHAT on the webpage is displayed -->
+    <h1 id="greeting" onClick="changeMessage(this)">Hello, world!</h1>
+    <p>
+      by
+      <span class="name1">NAME_1</span>
+      and
+      <span class="name2">NAME_2</span>
+    </p>
+  </body>
+</html>
