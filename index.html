@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Hello, world!</title>
+    <title>Wassup </title>
     <!-- "style" changes how your web page LOOKS like -->
     <style>
       body {
@@ -12,11 +12,23 @@
       .name2 {
         color: LightSeaGreen;
       }
+      body { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: yellow;
+
+      }
+      #kara-walker {
+        background-color: yellow;
+      }
+      }
     </style>
     <!-- "script" changes what your web page DOES -->
     <script>
       let greetings = [
-        "Hello, world!",    // english
+        "Wassup,Disney!",    // english
         "Hola, Mundo!",     // spanish
         "Salamu, Dunia!",   // swahili
         "Bonjour le monde!" // french
@@ -30,12 +42,20 @@
   </head>
   <!-- "body" lists what your web page CONTAINS -->
   <body>  
-    <h1 id="greeting" onClick="changeMessage(this)">Hello, world!</h1>
+    <h1 id="greeting" onClick="changeMessage(this)">Wasup,Disney!</h1>
+    <img src="https://s7d9.scene7.com/is/image/DisneyStoreES/Character_Assets_Mtmb-sq_character-mickey-mouse_launch?$sq-c$">
+    <canvas id="kara-walker" width="600px" height="600px"></canvas>
     <p>
       by
-      <span class="name1">NAME_1</span>
+      <span class="name1">Cierra</span>
       and
-      <span class="name2">NAME_2</span>
+      <span class="name2"></span>KAYLA♥♥
+      /span>
     </p>
+    <script>
+    const canvas = document.getElementById('kara-walker')
+    </script>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0uF345INHax51-C5Jn8Gf4OdlAplX941fRXTKw-fqOobtSCK">
+    <img src="https://s7d9.scene7.com/is/image/DisneyStoreES/Character_Assets_Mtmb-sq_character-mickey-mouse_launch?$sq-c$">
   </body>
 </html>
